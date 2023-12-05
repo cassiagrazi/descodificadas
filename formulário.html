@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Autismo na Mídia</title>
+    <link rel="shortcut icon" href="autismo.png" type="image/x-icon">
+    <style>
+        body {
+            margin: 0;
+            /*border: 10px solid black;*/
+            background-image: url('autismo.png');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        header {
+            padding: 10px;
+            text-align:left; /*mexi aqui =- era center*/
+            /* background-color: rgba(255, 255, 255, 0.8); Adicionei um fundo branco transparente ao header */
+        }
+
+        nav {
+            margin: 10;
+            display: flex;
+            justify-content:space-evenly;
+            background-color: #787b83;
+            padding: 10px;
+            width: 100%;
+            /*box-sizing: border-box;*/
+        }
+
+        nav a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+        }
+
+        #texto {
+            text-align: center;
+            padding: 20px;
+            border-radius: 50px;
+            color: rgb(74, 58, 75);
+            font-size: 20px;
+            background-color: rgba(255, 255, 255, 0.8); /* Adicionei um fundo branco transparente ao conteúdo */
+            margin-top: 20px; /* Adicionei um espaço entre o header e o conteúdo */
+        }
+
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.2);
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
+        form {
+            width: 60%;
+            margin: 20px auto;
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        label {
+            display: block;
+            margin: 10px 0;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: #787b83;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        .pulsating-image {
+            width: 100px;
+            height: auto;
+            animation: pulse 2s infinite;
+            position: absolute;
+            top: 20px;
+            left: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="logo1.png" alt="Imagem Pulsante" class="pulsating-image">
+        <h1>Autismo na Mídia</h1>
+    </header>
+
+    <nav>
+        <a href="autismonamidia.html">Home </a>
+        <a href="sobre.html">Sobre mim</a>
+        <a href="https://www.google.com.br/maps/place/SENAI+Jaragu%C3%A1+do+Sul/@-26.5047809,-49.0908115,18z/data=!4m6!3m5!1s0x94de94dc6a858273:0xd80706fb4dc3a3a3!8m2!3d-26.50437!4d-49.0889029!16s%2Fg%2F11xgxs3tr?entry=ttu" target="_blank">Como Chegar</a>
+        <a href="formulário.html">Vamos conversar?</a>
+        <a href="contato.html">Contato</a>
+    </nav>
+    <form>
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required>
+
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="mensagem">Mensagem:</label>
+        <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+
+        <button type="submit">Enviar</button>
+    </form>
+
+    <!-- Link para o formulário do Google Forms -->
+    <p>Se preferir, preencha nosso <a href="https://docs.google.com/forms/d/e/1FAIpQLSezDLUKurzasHKJu6jUcXqpFNfTGUVR5MlpRNVdHcu8Uy36xA/viewform" target="_blank">formulário online</a>.</p>
+
+   
+</body>
+</html>
